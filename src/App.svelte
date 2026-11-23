@@ -1,5 +1,5 @@
 <script>
-  import selenePreview from './assets/selene-preview.webp';
+  import seleneMoonPreview from './assets/selene-moon-preview.webp';
 
   function scrollToProjects() {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -50,8 +50,8 @@
         >
           <div class="image-wrapper">
             <img
-              src={selenePreview}
-              alt="Preview of selenemoon.vercel.app"
+              src={seleneMoonPreview}
+              alt="Preview of selenemoon.vercel.app - Lunar Landing Navigator"
               class="preview-img"
               loading="lazy"
             />
@@ -59,8 +59,8 @@
               <span class="view-pill">
                 Visit Website
                 <svg
-                  width="14"
-                  height="14"
+                  width="13"
+                  height="13"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -84,11 +84,11 @@
             rel="noopener noreferrer"
             class="project-title-link"
           >
-            <h3 class="project-title">selenemoon.vercel.app</h3>
+            <h3 class="project-title">Selene Moon</h3>
             <svg
               class="external-icon"
-              width="16"
-              height="16"
+              width="15"
+              height="15"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -186,23 +186,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 1.5rem 6rem;
+    padding: 4rem 1.5rem 5rem;
     border-top: 1px solid #f0f0f0;
   }
 
   .projects-container {
     width: 100%;
-    max-width: 860px;
+    max-width: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .section-heading {
-    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 700;
     color: #111111;
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 2rem 0;
     letter-spacing: -0.02em;
     text-align: center;
   }
@@ -211,19 +211,19 @@
     width: 100%;
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
-    border-radius: 16px;
+    border-radius: 14px;
     overflow: hidden;
     transition:
       transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
       box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
       border-color 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
   }
 
   .project-card:hover {
     transform: translateY(-4px);
-    border-color: #d0d0d0;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    border-color: #cfcfcf;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.09);
   }
 
   .project-preview-link {
@@ -249,13 +249,13 @@
   }
 
   .project-card:hover .preview-img {
-    transform: scale(1.02);
+    transform: scale(1.025);
   }
 
   .hover-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.28);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,21 +271,21 @@
   .view-pill {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.2rem;
+    gap: 0.45rem;
+    padding: 0.55rem 1.1rem;
     background-color: rgba(255, 255, 255, 0.95);
     color: #111111;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     border-radius: 9999px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .project-details {
-    padding: 1.5rem 1.75rem;
+    padding: 1.25rem 1.4rem;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.35rem;
     background: #ffffff;
   }
 
@@ -305,7 +305,7 @@
 
   .project-title {
     margin: 0;
-    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
     font-weight: 700;
     letter-spacing: -0.01em;
   }
@@ -320,9 +320,9 @@
 
   .project-subtext {
     margin: 0;
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     color: #666666;
-    line-height: 1.5;
+    line-height: 1.45;
   }
 
   @keyframes appear {
