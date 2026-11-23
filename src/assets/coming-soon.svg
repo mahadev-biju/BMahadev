@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <!-- Pure black background -->
+  <rect width="1600" height="1000" fill="#000000" />
+  <rect x="2" y="2" width="1596" height="996" fill="none" stroke="#1f1f23" stroke-width="4" />
+
+  <!-- Clean centered Coming Soon text -->
+  <text
+    x="800"
+    y="528"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="88"
+    font-weight="600"
+    fill="#ffffff"
+    letter-spacing="3"
+    text-anchor="middle"
+  >Coming Soon</text>
+</svg>
