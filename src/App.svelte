@@ -1,10 +1,36 @@
 <script>
   import seleneMoonPreview from './assets/selene-moon-preview.webp';
+  import DotGrid from '$lib/components/DotGrid.svelte';
 
   function scrollToProjects() {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   }
 </script>
+
+<div class="background-grid">
+  <DotGrid
+    baseColor="#000000"
+    activeColor="#ffffff"
+    shape="circle"
+    dotSize={5}
+    gap={14}
+    proximity={140}
+    strength={0.7}
+    bounce={0.5}
+    tension={0.5}
+    returnDuration={1.4}
+    shockRadius={320}
+    shockStrength={11}
+    swell={0.4}
+    stretch={0.2}
+    glow={0.9}
+    fade={0.5}
+    intro
+    opacity={0.3}
+    mouseInteraction
+    clickShock
+  />
+</div>
 
 <div class="wrapper">
   <!-- First screen (Hero) -->
@@ -108,10 +134,24 @@
 </div>
 
 <style>
+  .background-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
   .wrapper {
+    position: relative;
+    z-index: 1;
     width: 100%;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
   .hero-screen {
@@ -138,7 +178,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-size: clamp(2.2rem, 5.5vw, 4.2rem);
     font-weight: 700;
-    color: #111111;
+    color: #0f172a;
     letter-spacing: -0.03em;
     line-height: 1.2;
     user-select: none;
@@ -187,7 +227,7 @@
     justify-content: center;
     align-items: center;
     padding: 4rem 1.5rem 5rem;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
 
   .projects-container {
@@ -201,7 +241,7 @@
   .section-heading {
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 700;
-    color: #111111;
+    color: #0f172a;
     margin: 0 0 2rem 0;
     letter-spacing: -0.02em;
     text-align: center;
@@ -217,7 +257,7 @@
       transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
       box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
       border-color 0.3s ease;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
   }
 
   .project-card:hover {
